@@ -13,58 +13,50 @@
     <header id="header">
         <img id="header-img" src="logo.svg" alt="Logo" height="50em">
         <h1>Product Landing Page</h1>
-        <nav id="navbar">
+        <nav id="nav-bar">
             <ul>
-                <li><a href="#">Features</a></li>
-                <li><a href="#">Video</a></li>
-                <li><a href="#">Contact</a></li>
+                <li class="nav-link"><a href="#">Features</a></li>
+                <li class="nav-link"><a href="#">Video</a></li>
+                <li class="nav-link"><a href="#">Contact</a></li>
             </ul>
         </nav>
     </header>
+    <main>
     <div class="title-div">
-        <h2>Use an Eye-catching headline up top</h2>
-        <p class="sub-heading">With some short but punchy supporting copy!</p>
+        <h2 class="heading">Catch Our Attention with a Headline</h2>
+        <p class="sub-heading">And add some short but punchy supporting copy!</p>
     </div>
     <div class="video-div">
-        <video width="500px" height="auto" controls id="video">
-            <source src="pexels-videos-1550080.mp4" type="video/mp4">
-        </video>
-        <p>Video by <a
-                href="https://www.pexels.com/@tomfisk?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels">Tom
-                Fisk</a> from <a
-                href="https://www.pexels.com/photo/a-rocky-coast-1550080/?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels">Pexels</a>
-        </p>
+        <iframe width="400" height="210" id="video" src="https://www.youtube.com/embed/pjjAIeeglCs" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
     </div>
     <div class="benefits-div">
-        <div class="column-div no-mobile">
+        <div class="no-mobile">
             <p>
                 Above the fold, you should put the stuff that'll make your reader <em>want</em> to scroll down and read
-                your fearure list.
+                your feature list.
             </p>
-            <img src="#">
         </div>
-        <div class="column-div">
+        <div>
             <p>
                 Testimonials and the benefits of your product are perfect here (just remember, the <em>benefits</em>,
-                not the features up here).
+                not a dry feature list).
             </p>
-            <img src="#">
         </div>
-        <div class="column-div">
+        <div>
             <p>
-                That video up there could also have been a signup form or similar.
+                That video up there could also have been the signup form or another more tangible call to action.
             </p>
-            <img src="#">
         </div>
     </div>
     <div class="column-div">
         <div>
             <h3>Only include relevant links</h3>
-            <p>
-                You don't want your readers clicking away and getting distracted so don't link too much to other
+            <p>You don't want your readers clicking away and getting distracted so don't link too much to other
                 parts of your website. We're trying to build as straight a road as possible between googling for your
-                product and clicking a 'buy' button.
-                <br>But it would help to give us reasons to trust you, so if you've got security certificates, or if
+                product and clicking a 'buy' button.</p>
+            <p>But it would help to give us reasons to trust you, so if you've got security certificates, or if
                 you're certified Fair Trade? Brag about that here and show us those well-known logos, baby!
             </p>
         </div>
@@ -86,22 +78,25 @@
     </div>
     </div>
     <div class="form-div">
-        <form id="form">
+        <h3>Build your mailing list</h3>
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
             <label for="fname">First name</label>
             <input type="text" id="fname" label="fname">
+            <br>
             <label for="lname">Last name</label>
             <input type="text" id="lname" label="lname">
+            <br>
             <label for="email">Email address</label>
-            <input type="email" id="email" name="email" required="required">
+            <input type="email" id="email" name="email" placeholder="my@email.com" required="required">
+            <br>
             <label for="consent">My name and contact details will be retained so I can receive marketing material about
                 this product, and I'm fine with that!</label>
             <input type="checkbox" id="consent" name="consent" required="required">
-            <input type="submit" value="submit">
+            <br>
+            <input type="submit" value="submit" id="submit">
         </form>
     </div>
-    <img src="https://images.pexels.com/photos/1998439/pexels-photo-1998439.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"
-        alt="Boats on beach">
-
+</main>
 </body>
 
 </html>

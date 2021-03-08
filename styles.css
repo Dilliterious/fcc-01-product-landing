@@ -1,11 +1,33 @@
+/*Body*/
+
+body {
+    max-width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /*Typography*/
 
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-a {
-    text-decoration: none;
+h2 {
+    font-size: 2.5em;
+}
+
+h3 {
+    font-size: 2em;
+    font-weight: 400;
+    color: #006d5b;
+}
+
+.sub-heading {
+    font-size: 1.5em;
+}
+
+ul {
+    margin-left: -1.5em;
 }
 
 /*Header and navigation*/
@@ -14,6 +36,10 @@ header {
     background-color: #006d5b;
     color: white;
     text-align: center;
+    position: fixed;
+    top:0px;
+    left:0px;
+    width: 100%;
 }
 
 header h1 {
@@ -35,12 +61,33 @@ nav li {
     margin: 0.5em;
 }
 
-a {
+header a {
     color: white;
     font-weight: 600;
+    text-decoration: none;
 }
 
 #header-img {
     display:inline;
     vertical-align: -50%;
+}
+
+/*Main content*/
+
+.video-div {
+    background-color:#006d5b;
+}
+#video {
+    display: block;
+    margin: auto;
+}
+
+.no-mobile {
+    height: 0px;
+    width: 0px;
+    overflow: hidden;
+}
+
+main {
+    padding-top: 6em;
 }
