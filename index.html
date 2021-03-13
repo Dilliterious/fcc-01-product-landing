@@ -15,88 +15,98 @@
         <h1>Product Landing Page</h1>
         <nav id="nav-bar">
             <ul>
-                <li class="nav-link"><a href="#">Features</a></li>
-                <li class="nav-link"><a href="#">Video</a></li>
-                <li class="nav-link"><a href="#">Contact</a></li>
+                <li class="nav-link"><a href="#features">Features</a></li>
+                <li class="nav-link"><a href="#form">Sign up</a></li>
+                <li class="nav-link"><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
-    <div class="title-div">
-        <h2 class="heading">Catch Our Attention with a Headline</h2>
-        <p class="sub-heading">And add some short but punchy supporting copy!</p>
-    </div>
-    <div class="video-div">
-        <iframe width="400" height="210" id="video" src="https://www.youtube.com/embed/pjjAIeeglCs" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
-    </div>
-    <div class="benefits-div">
-        <div class="no-mobile">
-            <p>
-                Above the fold, you should put the stuff that'll make your reader <em>want</em> to scroll down and read
-                your feature list.
-            </p>
+        <div class="hero-div">
+            <div class="title-div">
+                <h2 class="heading">Catch Our Attention with a Headline</h2>
+                <p class="sub-heading">And add some short but punchy supporting copy!</p>
+            </div>
+            <div class="video-div">
+                <iframe width="400" height="210" id="video" src="https://www.youtube.com/embed/pjjAIeeglCs"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
         </div>
-        <div>
-            <p>
-                Testimonials and the benefits of your product are perfect here (just remember, the <em>benefits</em>,
-                not a dry feature list).
-            </p>
+        <div class="benefits-div">
+            <div class="no-mobile">
+                <p>
+                    Above the fold, you should put the stuff that'll make your reader <em>want</em> to scroll down and
+                    read
+                    your feature list.
+                </p>
+            </div>
+            <div>
+                <p>
+                    Testimonials and the benefits of your product are perfect here (just remember, the
+                    <em>benefits</em>,
+                    not a dry feature list).
+                </p>
+            </div>
+            <div>
+                <p>
+                    That video up there could also have been the signup form or another more tangible call to action.
+                </p>
+            </div>
         </div>
-        <div>
-            <p>
-                That video up there could also have been the signup form or another more tangible call to action.
-            </p>
+        <div class="column-div">
+            <div>
+                <h3>Only include relevant links</h3>
+                <p>You don't want your readers clicking away and getting distracted so don't link too much to other
+                    parts of your website. We're trying to build as straight a road as possible between googling for
+                    your
+                    product and clicking a 'buy' button.</p>
+                <p>But it would help to give us reasons to trust you, so if you've got security certificates, or if
+                    you're certified Fair Trade? Brag about that here and show us those well-known logos, baby!
+                </p>
+            </div>
+            <div class="features-div">
+                <h3 id="features">List Your Features</h3>
+                <ul>
+                    <li>
+                        <p>You grabbed our attention up top.</p>
+                    </li>
+                    <li>
+                        <p>Now that we've heard how <strong>great</strong> our lives/business will become once we have
+                            your product,</p>
+                    </li>
+                    <li>
+                        <p>You should tell us the details!</p>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
-    <div class="column-div">
-        <div>
-            <h3>Only include relevant links</h3>
-            <p>You don't want your readers clicking away and getting distracted so don't link too much to other
-                parts of your website. We're trying to build as straight a road as possible between googling for your
-                product and clicking a 'buy' button.</p>
-            <p>But it would help to give us reasons to trust you, so if you've got security certificates, or if
-                you're certified Fair Trade? Brag about that here and show us those well-known logos, baby!
-            </p>
         </div>
-        <div class="features-div">
-            <h3>List Your Features</h3>
-            <ul>
-                <li>
-                    <p>You grabbed our attention up top.</p>
-                </li>
-                <li>
-                    <p>Now that we've heard how <strong>great</strong> our lives/business will become once we have
-                        your product,</p>
-                </li>
-                <li>
-                    <p>You should tell us the details!</p>
-                </li>
-            </ul>
+        <div class="form-div">
+            <h3>Build your mailing list</h3>
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
+                <label for="fname">First name</label>
+                <input type="text" id="fname" label="fname">
+                <br>
+                <label for="lname">Last name</label>
+                <input type="text" id="lname" label="lname">
+                <br>
+                <label for="email">Email address</label>
+                <input type="email" id="email" name="email" placeholder="my@email.com" required="required">
+                <br>
+                <label for="consent">My name and contact details will be retained so I can receive marketing material
+                    about
+                    this product, and I'm fine with that!</label>
+                <input type="checkbox" id="consent" name="consent" required="required">
+                <br>
+                <input type="submit" value="submit" id="submit">
+            </form>
         </div>
-    </div>
-    </div>
-    <div class="form-div">
-        <h3>Build your mailing list</h3>
-        <form id="form" action="https://www.freecodecamp.com/email-submit">
-            <label for="fname">First name</label>
-            <input type="text" id="fname" label="fname">
-            <br>
-            <label for="lname">Last name</label>
-            <input type="text" id="lname" label="lname">
-            <br>
-            <label for="email">Email address</label>
-            <input type="email" id="email" name="email" placeholder="my@email.com" required="required">
-            <br>
-            <label for="consent">My name and contact details will be retained so I can receive marketing material about
-                this product, and I'm fine with that!</label>
-            <input type="checkbox" id="consent" name="consent" required="required">
-            <br>
-            <input type="submit" value="submit" id="submit">
-        </form>
-    </div>
-</main>
+    </main>
+    <footer>
+        <p id="contact">Finally, don't forget to provide your contact info!</p>
+    </footer>
 </body>
 
 </html>

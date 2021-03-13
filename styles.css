@@ -82,12 +82,40 @@ header a {
     margin: auto;
 }
 
-.no-mobile {
-    height: 0px;
-    width: 0px;
-    overflow: hidden;
-}
-
 main {
     padding-top: 6em;
+}
+
+footer {
+    background-color:#006d5b;
+    color: white;
+    text-align: center;
+}
+
+/*Hiding an element on mobile. Not sure how to do this elegantly*/
+
+@media screen and (max-width: 699px) {
+    .no-mobile {
+        height: 0px;
+        width: 0px;
+        overflow: hidden;
+    }
+}
+
+/*Desktop*/
+
+@media screen and (min-width: 700px) {
+    .hero-div,
+    .benefits-div,
+    .column-div {
+        display: flex;
+    }
+    
+    .hero-div {
+        height: 60vh;
+    }
+    .title-div,
+    .video-div {
+        justify-content: center;
+    }
 }
